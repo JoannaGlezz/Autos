@@ -18,37 +18,33 @@
         <img src="images/banner.jpg" alt="">
     </header>
 
-    <form method="get" action="" class="marca">
-        <fieldset>
+    <form id="formMarca" class="marca">
+        <div class="fieldset">
             <h4>Elige Tu Marca</h4>
             <label for="">
-                <input type="radio" id="marca" value="Alfa Romeo"> Alfa Romeo
+                <input type="radio" name="marca" value="Alfa Romeo"> Alfa Romeo
             </label>
 
             <label for="">
-                <input type="radio" id="marca" value="Kia"> Kia
+                <input type="radio" name="marca" value="Kia"> Kia
             </label>
 
             <label for="">
-                <input type="radio" id="marca" value="BMW"> BMW
+                <input type="radio" name="marca" value="BMW"> BMW
             </label>
 
             <label for="">
-                <input type="radio" id="marca" value="Wolksvagen"> Wolksvagen
+                <input type="radio" name="marca" value="Wolksvagen"> Wolksvagen
             </label>
 
             <label for="">
-                <input type="radio" id="marca" value="Ford"> Ford
+                <input type="radio" name="marca" value="Ford"> Ford
             </label>
-        </fieldset>
-    </form>
-    <button onclick="crear()">Crear</button>
+        </div>
 
-
-    <form action="">
-        <fieldset>
+        <div class="fieldset">
             <h4>Elige tu modelo</h4>
-            <select name="lista1">
+            <select name="modelo">
                 <optgroup label="modelos">
                     <option>Año 2019</option>
                     <option>Año 2018</option>
@@ -63,7 +59,7 @@
                 </optgroup>
             </select>
 
-            <select name="colores" id="colores">
+            <select name="color" id="colores">
                 <option value="Negro">Negro</option>
                 <option value="Blanco">Blanco</option>
                 <option value="Gris Oxford">Gris Oxford</option>
@@ -86,55 +82,57 @@
             </label>
             <br>
 
-        </fieldset>
-    </form>
+        </div>
 
-    <form action="">
-        <fieldset>
+        <div class="fieldset">
             <label>
-                Elige tu mejor version <br>
-
-                <div>
-                    <input type="radio" name="puertas" value="Hatchback Manual">
-                    El Hatchback LT con transmisión manual incluye:
-
+                Elige tu mejor version
+            </label>
+            
+            <div>
                     <br>
-                    <span>
-                        -Motor turbocargado ECOTEC de 1.4 L y 4 cilindros <br>
-                        -Frenos antibloqueo en las 4 ruedas <br>
-                        -10 bolsas de aire <br>
-                        -Sistema de monitoreo de presión de neumáticos <br>
-                        -Cámara retrovisora <br>
-                        -Faros delanteros halógenos estilo proyector <br>
-                        -Bluetooth inalámbrico Tecnología† para ciertos teléfonos <br>
-                        -Rines de aluminio de 16"
-                    </span>
-                </div>
+                <input type="radio" name="version" value="Hatchback Manual">
+                
+                El Hatchback LT con transmisión manual incluye:
 
                 <br>
+                <span>
+                    -Motor turbocargado ECOTEC de 1.4 L y 4 cilindros <br>
+                    -Frenos antibloqueo en las 4 ruedas <br>
+                    -10 bolsas de aire <br>
+                    -Sistema de monitoreo de presión de neumáticos <br>
+                    -Cámara retrovisora <br>
+                    -Faros delanteros halógenos estilo proyector <br>
+                    -Bluetooth inalámbrico Tecnología† para ciertos teléfonos <br>
+                    -Rines de aluminio de 16"
+                </span>
+            </div>
 
-                <div>
-                    <input type="radio" name="" value="Hatchback Automatico">
-                    El LT Hatchback con transmisión automática incluye:
+            
+
+            <div>
                     <br>
-                    <span>
-                        -Motor turbocargado ECOTEC de 1.4 L y 4 cilindros <br>
-                        -Frenos antibloqueo en las 4 ruedas <br>
-                        -10 bolsas de aire <br>
-                        -Prueba de Servicios conectados de Chevrolet y del Plan de seguridad OnStar Cobertura <br>
-                        -Sistema de control electrónico de estabilidad StabiliTrak con control de tracción y Panic Brake
-                        <br>
-                        -Assist <br>
-                        -Sistema antirrobo con alarma de robo de contenido e inmovilizador de motor <br>
-                        -Sistema de monitoreo de presión de neumáticos <br>
-                        -Cámara retrovisora <br>
-                    </span>
-                </div>
-            </label>
-        </fieldset>
+                <input type="radio" name="version" value="Hatchback Automatico">
+                El LT Hatchback con transmisión automática incluye:
+                <br>
+                <span>
+                    -Motor turbocargado ECOTEC de 1.4 L y 4 cilindros <br>
+                    -Frenos antibloqueo en las 4 ruedas <br>
+                    -10 bolsas de aire <br>
+                    -Prueba de Servicios conectados de Chevrolet y del Plan de seguridad OnStar Cobertura <br>
+                    -Sistema de control electrónico de estabilidad StabiliTrak con control de tracción y Panic Brake
+                    <br>
+                    -Assist <br>
+                    -Sistema antirrobo con alarma de robo de contenido e inmovilizador de motor <br>
+                    -Sistema de monitoreo de presión de neumáticos <br>
+                    -Cámara retrovisora <br>
+                </span>
+            </div>
+
+        </div>
     </form>
 
-    <button id="miAuto()">Ver mi auto</button>
+    <button onclick="crear()">Ver mi auto</button>
 
     <span id="miAuto">
         <h4>Mi Auto</h4>
